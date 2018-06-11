@@ -9,6 +9,14 @@ html {
 }
 
 body {
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    /*-khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
     background-color: slategray;
     text-align: center;
     height: 100%;
@@ -60,27 +68,6 @@ html, body {
 }
 
 #levelDisplay {
-    display:inline-block;
-    line-height: 0;
-    color: #ffa615;
-    margin-right:3px;
-}
-
-/* Score */
-
-
-#scoreDiv {
-    display:inline-block;
-    margin-top: 0px;
-}
-
-#scoreLabel {
-    display:inline-block;
-    margin-right:3px;
-    line-height: 0;
-}
-
-#scoreDisplay {
     display:inline-block;
     line-height: 0;
     color: #ffa615;

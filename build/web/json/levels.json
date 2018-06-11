@@ -1,8 +1,8 @@
 {
    "1":
       {
-         "velocityInMilliseconds":2000,
-         "rowsToNextLevel":3,
+         "velocityInMilliseconds":1000,
+         "rowsToNextLevel":1,
          "probabilityRandomRowsFromBelow":0,
          "possibleStones":[
             1,
@@ -10,22 +10,21 @@
             3
          ],
          "shouldMatchfieldRotate":false,
-         "messageAfterLevel" : "Heureka"
+         "messageAfterLevel":"Level 2 reached<hr>Beware of the rotations"
       },
   "2":
       {
-         "velocityInMilliseconds":1000,
+         "velocityInMilliseconds":500,
          "rowsToNextLevel":4,
          "probabilityRandomRowsFromBelow":0.1,
-         "possibleStones":[
+         "possibleStones": [
             1,
             2,
             3,
             4,
             5
          ],
-         "shouldMatchfieldRotate":false,
-        "messageAfterLevel" : "Heureka"
-
+         "shouldMatchfieldRotate":true,
+        "messageAfterLevel":"Heureka"
       }
 }
