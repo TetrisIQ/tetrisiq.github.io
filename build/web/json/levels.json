@@ -15,7 +15,7 @@
   "2":
       {
          "velocityInMilliseconds":500,
-         "rowsToNextLevel":4,
+         "rowsToNextLevel":1000,
          "probabilityRandomRowsFromBelow":0.1,
          "possibleStones": [
             1,
