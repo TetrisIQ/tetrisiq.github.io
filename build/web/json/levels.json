@@ -1,0 +1,31 @@
+{
+   "1":
+      {
+         "velocityInMilliseconds":2000,
+         "rowsToNextLevel":3,
+         "probabilityRandomRowsFromBelow":0,
+         "possibleStones":[
+            1,
+            2,
+            3
+         ],
+         "shouldMatchfieldRotate":false,
+         "messageAfterLevel" : "Heureka"
+      },
+  "2":
+      {
+         "velocityInMilliseconds":1000,
+         "rowsToNextLevel":4,
+         "probabilityRandomRowsFromBelow":0.1,
+         "possibleStones":[
+            1,
+            2,
+            3,
+            4,
+            5
+         ],
+         "shouldMatchfieldRotate":false,
+        "messageAfterLevel" : "Heureka"
+
+      }
+}

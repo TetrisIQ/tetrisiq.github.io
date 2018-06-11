@@ -1,0 +1,210 @@
+/* General */
+
+* {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: slategray;
+    text-align: center;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.pauseResume {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pauseGame {
+    display: block;
+}
+
+#resumeGame {
+    display: none;
+}
+
+#rotate {
+    visibility: hidden; /* Only for tests */
+}
+
+#info {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow: auto;
+}
+
+/* Level */
+
+#levelDiv {
+    display:inline-block;
+    margin-bottom: 0px;
+}
+
+#levelLabel {
+    display:inline-block;
+    margin-right:3px;
+    line-height: 0;
+}
+
+#levelDisplay {
+    display:inline-block;
+    line-height: 0;
+    color: #ffa615;
+    margin-right:3px;
+}
+
+/* Score */
+
+
+#scoreDiv {
+    display:inline-block;
+    margin-top: 0px;
+}
+
+#scoreLabel {
+    display:inline-block;
+    margin-right:3px;
+    line-height: 0;
+}
+
+#scoreDisplay {
+    display:inline-block;
+    line-height: 0;
+    color: #ffa615;
+    margin-right:3px;
+}
+
+/* Rows to next level */
+
+#rowsToNextLevelDiv {
+    display:inline-block;
+    margin-bottom: 0px;
+}
+
+#rowsToNextLevelLabel {
+    display:inline-block;
+    margin-right:3px;
+    line-height: 0;
+}
+
+#rowsToNextLevelDisplay {
+    display:inline-block;
+    line-height: 0;
+    color: #ffa615;
+    margin-right:3px;
+}
+
+/* Matchfield */
+
+#matchfield {
+    width: 80%;
+    max-width:400px;
+    vertical-align: middle;
+    position:relative;
+    margin:auto;
+}
+
+#matchfield th, td {
+    border: 1px;
+    width: 5%;
+    position: relative;
+}
+
+#matchfield td:after {
+    content: '';
+    display: block;
+    margin-top: 100%;
+}
+
+#matchfield td.yellow-cell {
+    background-color: #ffa615;
+}
+
+#matchfield td.black-cell {
+    background-color: black;
+}
+
+#matchfield td.white-cell {
+    background-color: white;
+}
+
+#matchfield.bottom-right {
+    transform: rotate(90deg);
+}
+
+#matchfield.normal {
+    transform: rotate(0deg);
+}
+
+#matchfield.over-head {
+    transform: rotate(180deg);
+}
+
+#matchfield.bottom-left {
+    transform: rotate(270deg);
+}
+
+/* Start Overlay */
+
+#startOverlay {
+    text-align: center;
+    color: #ffa615;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#startMessage {
+    vertical-align: middle;
+}
+
+#startGame {
+    color: #ffa615;
+    border-radius: 3px;
+    border: 2px solid #ffa615;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+/* Info Overlay */
+
+#infoOverlay {
+    text-align: center;
+    color: #ffa615;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#infoMessage {
+    vertical-align: middle;
+}

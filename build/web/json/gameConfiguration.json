@@ -1,0 +1,13 @@
+{
+  "1": {
+    "MatchfieldSize": 15,
+    "WelcomeMessage": "",
+    "LevelConfigurationLocation" :""
+  },
+  "2": {
+    "MatchfieldSize": 20,
+    "WelcomeMessage": "",
+    "LevelConfigurationLocation" :""
+  }
+}
+
