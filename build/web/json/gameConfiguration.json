@@ -2,12 +2,14 @@
   "1": {
     "MatchfieldSize": 15,
     "WelcomeMessage": "",
-    "LevelConfigurationLocation" :""
+    "LevelConfigurationLocation" :"json/levels.json",
+    "StoneConfigurationLocation" : "json/stones.json"
   },
   "2": {
-    "MatchfieldSize": 20,
+    "MatchfieldSize": 18,
     "WelcomeMessage": "",
-    "LevelConfigurationLocation" :""
+    "LevelConfigurationLocation" :"json/levels.json",
+    "StoneConfigurationLocation" : "json/stones.json"
   }
 }
 

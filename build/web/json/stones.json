@@ -13,7 +13,7 @@
       [[-1, -1], [0, 0], [1, 1], [2, 2]],
       [[1, -2], [0, -1], [-1, 0], [-2, 1]]
     ],
-    "collor" : ""
+    "color" : "red"
   },
   "2" :
   {
@@ -29,15 +29,15 @@
       [[-1, -1], [0, 0], [1, 1], [2, 0]],
       [[0, -1], [-1, 0], [-2, 1], [-1, 2]]
     ],
-    "collor" : ""
+    "color" : "blue"
   },
   "3" :
   {
     "structure":[
-      [false,false,false,false],
       [false,true,false,false],
       [true,true,true,false],
-      [false,true,false,false]
+      [false,false,false,false],
+      [false,false,false,false]
     ],
     "transitions":[
       [[1, 1], [1, -1], [0, 0], [-1, 1]],
@@ -45,14 +45,14 @@
       [[-1, -1], [-1, 1], [0, 0], [1, -1]],
       [[1, -1], [-1, -1], [0, 0], [1, 1]]
     ],
-    "collor" : ""
+    "color" : "cyan"
   },
   "4" :
   {
     "structure":[
+      [false,true,true,false],
+      [false,true,true,false],
       [false,false,false,false],
-      [false,true,true,false],
-      [false,true,true,false],
       [false,false,false,false]
     ],
     "transitions":[
@@ -61,7 +61,7 @@
       [[0, 0], [0, 0], [0, 0], [0, 0]],
       [[0, 0], [0, 0], [0, 0], [0, 0]]
     ],
-    "collor" : ""
+    "color" : "pink"
   },
   "5" :
   {
@@ -77,14 +77,14 @@
       [[0, -1], [1, 0], [1, 2], [2, 1]],
       [[1, -1], [0, 0], [-2, 0], [-1, 1]]
     ],
-    "collor" : ""
+    "color" : "green"
   },
   "6" :
   {
     "structure":[
-      [false,false,false,false],
       [true,true,false,false],
       [false,true,true,false],
+      [false,false,false,false],
       [false,false,false,false]
     ],
     "transitions":[
@@ -93,14 +93,14 @@
       [[1, -1], [0, 0], [-1, -1], [-2, 0]],
       [[-1, 1], [0, 0], [1, 1], [2, 0]]
     ],
-    "collor" : ""
+    "color" : "yellow"
   },
   "7" :
   {
     "structure": [
-      [false,false,false,false],
       [false,true,true,false],
       [true,true,false,false],
+      [false,false,false,false],
       [false,false,false,false]
     ],
     "transitions":[
@@ -109,6 +109,6 @@
       [[0, 0], [-1, 1], [0, -2], [-1, -1]],
       [[0, 0], [1, -1], [0, 2], [1, 1]]
     ],
-    "collor" : ""
+    "color" : "white"
   }
 }
