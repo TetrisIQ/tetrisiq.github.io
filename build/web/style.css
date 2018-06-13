@@ -121,24 +121,34 @@ html, body {
 /* --------------------------------------------*/
 
 #matchfield {
-    width: 80%;
-    max-width:400px;
     vertical-align: middle;
     position:relative;
     margin:auto;
     border: 4px solid black;
 }
 
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td {
+    /*width: 20px;
+    height: 20px;*/
+    position: fixed;
+}
+
 #matchfield th, td {
     border: 1px;
-    width: 5%;
+    /*width: 5%;*/
+
     position: relative;
 }
 
 #matchfield td:after {
     content: '';
     display: block;
-    margin-top: 100%;
+    /*margin-top: 100%;*/
 }
 
 /* --------------------------------------------*/
