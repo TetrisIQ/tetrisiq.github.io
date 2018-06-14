@@ -16,8 +16,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 4px solid black;
-    margin: 0 0;
-    padding: 0;
+    margin: 6px;
 }
 
 body {
@@ -40,13 +39,14 @@ html, body {
     width: 100%;
 }
 
-img {
-    height : 42px ;
-    width : 42px;
+h1 {
+    margin: 10px;
+    padding: 0;
 }
 
-h1 {
-    margin-bottom: 10px;
+img {
+    margin-top: 0px;
+    padding: 0;
 }
 
 /* --------------------------------------------*/
@@ -73,8 +73,6 @@ h1 {
 #info {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    overflow: auto;
 }
 
 /* --------------------------------------------*/
@@ -84,12 +82,18 @@ h1 {
 #levelDiv {
     display:inline-block;
     margin-bottom: 0px;
+
+    margin: 0;
+    padding: 0;
 }
 
 #levelLabel {
     display:inline-block;
     margin-right:3px;
     line-height: 0;
+
+    margin: 0;
+    padding: 0;
 }
 
 #levelDisplay {
@@ -97,8 +101,9 @@ h1 {
     line-height: 0;
     color: #ffa615;
     margin-right:3px;
-    font-size: 30px;
-    font-weight: bold;
+
+    margin: 0;
+    padding: 0;
 }
 
 /* --------------------------------------------*/
@@ -108,12 +113,18 @@ h1 {
 #rowsToNextLevelDiv {
     display:inline-block;
     margin-bottom: 0px;
+
+    margin: 0;
+    padding: 0;
 }
 
 #rowsToNextLevelLabel {
     display:inline-block;
     margin-right:3px;
     line-height: 0;
+
+    margin: 0;
+    padding: 0;
 }
 
 #rowsToNextLevelDisplay {
@@ -121,8 +132,9 @@ h1 {
     line-height: 0;
     color: #ffa615;
     margin-right:3px;
-    font-size: 30px;
-    font-weight: bold;
+
+    margin: 0;
+    padding: 0;
 }
 
 /* --------------------------------------------*/
@@ -134,31 +146,16 @@ h1 {
     position:relative;
     margin:auto;
     border: 4px solid black;
-    padding-top: 1em !important;
-}
-
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
-td {
-    /*width: 20px;
-    height: 20px;*/
-    position: fixed;
 }
 
 #matchfield th, td {
-    border: 1px;
-    /*width: 5%;*/
-
     position: relative;
 }
 
 #matchfield td:after {
     content: '';
     display: block;
-    /*margin-top: 100%;*/
+    margin-top: 100%;
 }
 
 /* --------------------------------------------*/
