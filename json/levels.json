@@ -7,22 +7,72 @@
          "possibleStones":[
             1,
             2,
-            3
+            3,
+            4,
+            5,
+            6,
+            7
          ],
          "shouldMatchfieldRotate":false,
          "messageAfterLevel":"Level 2 reached<hr>Beware of the rotations"
       },
   "2":
       {
-         "velocityInMilliseconds":500,
-         "rowsToNextLevel":1000,
+         "velocityInMilliseconds":1000,
+         "rowsToNextLevel":4,
          "probabilityRandomRowsFromBelow":0.1,
          "possibleStones": [
             1,
             2,
             3,
             4,
-            5
+            5,
+            6,
+            7
+         ],
+         "shouldMatchfieldRotate":true,
+         "messageAfterLevel":"Level 3 reached<hr>More speed, no Rotation"
+      }  
+   "3":
+      {
+         "velocityInMilliseconds":800,
+         "rowsToNextLevel":7,
+         "probabilityRandomRowsFromBelow":0.1,
+         "possibleStones": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+         ],
+         "shouldMatchfieldRotate":false,
+         "messageAfterLevel":"Level 4 reached<hr>Only two Stones"
+      }
+   "4":
+      {
+         "velocityInMilliseconds":800,
+         "rowsToNextLevel":4,
+         "probabilityRandomRowsFromBelow":0.1,
+         "possibleStones": [
+            3,
+            4
+         ],
+         "shouldMatchfieldRotate":false,
+         "messageAfterLevel":"Level 5 reached<hr>Beware of the rotations"
+      }      {
+         "velocityInMilliseconds":800,
+         "rowsToNextLevel":100,
+         "probabilityRandomRowsFromBelow":0.1,
+         "possibleStones": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
          ],
          "shouldMatchfieldRotate":true,
          "messageAfterLevel":"Heureka"
