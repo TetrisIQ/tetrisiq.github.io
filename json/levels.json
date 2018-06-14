@@ -32,7 +32,7 @@
          ],
          "shouldMatchfieldRotate":true,
          "messageAfterLevel":"Level 3 reached<hr>More speed, no Rotation"
-      }  
+      },  
    "3":
       {
          "velocityInMilliseconds":800,
@@ -49,7 +49,7 @@
          ],
          "shouldMatchfieldRotate":false,
          "messageAfterLevel":"Level 4 reached<hr>Only two Stones"
-      }
+      },
    "4":
       {
          "velocityInMilliseconds":800,
