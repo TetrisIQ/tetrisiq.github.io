@@ -61,7 +61,9 @@
          ],
          "shouldMatchfieldRotate":false,
          "messageAfterLevel":"Level 5 reached<hr>Beware of the rotations"
-      }      {
+      },      
+   "5":
+   {
          "velocityInMilliseconds":800,
          "rowsToNextLevel":100,
          "probabilityRandomRowsFromBelow":0.1,
