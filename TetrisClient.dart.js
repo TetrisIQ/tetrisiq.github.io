@@ -4377,10 +4377,8 @@ if(b!=null)C.B.bQ(z,a,b,null)}},eV:{"^":"d:0;a",
 $1:function(a){var z
 P.aP("A "+J.w(J.ei(a))+"\tB "+J.w(a.beta)+"\tG "+J.w(a.gamma))
 z=a.alpha
-if(z!=null)if(a.beta!=null)if(a.gamma!=null){if(typeof z!=="number")return z.d2()
+if(z!=null){if(typeof z!=="number")return z.d2()
 z=z>90}else z=!1
-else z=!1
-else z=!1
 if(z){P.aP("heureka")
 z=this.a
 z.aZ()
