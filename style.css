@@ -175,7 +175,7 @@ img {
     background-color: darkred;
 }
 
-#matchfield td.black-cell {
+#matchfield td.default-cell {
     background-color: #333333;
 }
 
@@ -291,5 +291,6 @@ img {
 }
 
 #infoMessage {
+    margin-top: 100px;
     vertical-align: middle;
 }
