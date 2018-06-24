@@ -1,9 +1,8 @@
 {
    "1":
       {
-         "velocityInMilliseconds":1000,
+         "stoneSpeedInMilliseconds":1000,
          "rowsToNextLevel":1,
-         "probabilityRandomRowsFromBelow":0,
          "possibleStones":[
             1,
             2,
@@ -13,14 +12,13 @@
             6,
             7
          ],
-         "shouldMatchfieldRotate":false,
+         "shouldTetrisFieldRotate":false,
          "messageAfterLevel":"Level 2 reached<hr>Beware of the rotations"
       },
   "2":
       {
-         "velocityInMilliseconds":1000,
+         "stoneSpeedInMilliseconds":1000,
          "rowsToNextLevel":4,
-         "probabilityRandomRowsFromBelow":0.1,
          "possibleStones": [
             1,
             2,
@@ -30,14 +28,13 @@
             6,
             7
          ],
-         "shouldMatchfieldRotate":true,
+         "shouldTetrisFieldRotate":true,
          "messageAfterLevel":"Level 3 reached<hr>More speed, no Rotation"
       },  
    "3":
       {
-         "velocityInMilliseconds":800,
+         "stoneSpeedInMilliseconds":800,
          "rowsToNextLevel":7,
-         "probabilityRandomRowsFromBelow":0.1,
          "possibleStones": [
             1,
             2,
@@ -47,26 +44,24 @@
             6,
             7
          ],
-         "shouldMatchfieldRotate":false,
+         "shouldTetrisFieldRotate":false,
          "messageAfterLevel":"Level 4 reached<hr>Only two Stones"
       },
    "4":
       {
-         "velocityInMilliseconds":800,
+         "stoneSpeedInMilliseconds":800,
          "rowsToNextLevel":4,
-         "probabilityRandomRowsFromBelow":0.1,
          "possibleStones": [
             3,
             4
          ],
-         "shouldMatchfieldRotate":false,
+         "shouldTetrisFieldRotate":false,
          "messageAfterLevel":"Level 5 reached<hr>Beware of the rotations"
       },      
    "5":
    {
-         "velocityInMilliseconds":800,
+         "stoneSpeedInMilliseconds":800,
          "rowsToNextLevel":100,
-         "probabilityRandomRowsFromBelow":0.1,
          "possibleStones": [
             1,
             2,
@@ -76,7 +71,7 @@
             6,
             7
          ],
-         "shouldMatchfieldRotate":true,
+         "shouldTetrisFieldRotate":true,
          "messageAfterLevel":"Heureka"
       }
 }
