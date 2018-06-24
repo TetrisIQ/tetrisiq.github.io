@@ -25,7 +25,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #333333;
+    background-color: #474747;
     text-align: center;
     height: 100%;
     margin: 0;
@@ -157,6 +157,7 @@ img {
     position:relative;
     margin:auto;
     border: 4px solid black;
+    background-color: #bdbdbd;
 }
 
 #tetrisField th, td {

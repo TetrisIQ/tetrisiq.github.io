@@ -4938,7 +4938,7 @@ u=u.gO(r)
 q.toString
 q.backgroundColor=u==null?"":u
 s=!0}}if(!s){v=t.style
-v.backgroundColor="#333333"}}}},
+v.backgroundColor="#bdbdbd"}}}},
 fh:function(a){var z=document
 J.bw(z.querySelector("#tetrisField")).cS(0,new Y.hQ(a))
 J.bw(z.querySelector("#tetrisField")).D(0,a.d4())}},hN:{"^":"c:0;a,b",
