@@ -510,7 +510,7 @@ for(x=1;x<z;++x){y=b.$2(y,this.B(0,x))
 if(z!==this.gj(this))throw H.b(new P.C(this))}return y},
 bL:function(a,b){var z,y,x
 z=H.B([],[H.H(this,"ao",0)])
-C.b.sj(z,this.gj(this))
+C.c.sj(z,this.gj(this))
 for(y=0;y<this.gj(this);++y){x=this.B(0,y)
 if(y>=z.length)return H.i(z,y)
 z[y]=x}return z},
@@ -970,18 +970,18 @@ if(a.constructor===Array)return["const",z]
 this.ay(a,"Can't serialize indexable: ")},
 d8:function(a){var z,y,x
 z=[]
-C.b.sj(z,a.length)
+C.c.sj(z,a.length)
 for(y=0;y<a.length;++y){x=this.N(a[y])
 if(y>=z.length)return H.i(z,y)
 z[y]=x}return z},
 d9:function(a){var z
-for(z=0;z<a.length;++z)C.b.n(a,z,this.N(a[z]))
+for(z=0;z<a.length;++z)C.c.n(a,z,this.N(a[z]))
 return a},
 dc:function(a){var z,y,x,w
 if(!!a.constructor&&a.constructor!==Object)this.ay(a,"Only plain JS Objects are supported:")
 z=Object.keys(a)
 y=[]
-C.b.sj(y,z.length)
+C.c.sj(y,z.length)
 for(x=0;x<z.length;++x){w=this.N(a[z[x]])
 if(x>=y.length)return H.i(y,x)
 y[x]=w}return["js-object",z,y]},
@@ -993,7 +993,7 @@ bi:{"^":"a;a,b",
 a3:[function(a){var z,y,x,w,v,u
 if(a==null||typeof a==="string"||typeof a==="number"||typeof a==="boolean")return a
 if(typeof a!=="object"||a===null||a.constructor!==Array)throw H.b(P.cs("Bad serialized message: "+H.d(a)))
-switch(C.b.gcF(a)){case"ref":if(1>=a.length)return H.i(a,1)
+switch(C.c.gcF(a)){case"ref":if(1>=a.length)return H.i(a,1)
 z=a[1]
 y=this.b
 if(z>>>0!==z||z>=y.length)return H.i(y,z)
@@ -1174,7 +1174,7 @@ else if(!("message" in a))return a
 y=a.message
 if("number" in a&&typeof a.number=="number"){x=a.number
 w=x&65535
-if((C.c.cj(x,16)&8191)===10)switch(w){case 438:return z.$1(H.bN(H.d(y)+" (Error "+w+")",null))
+if((C.b.cj(x,16)&8191)===10)switch(w){case 438:return z.$1(H.bN(H.d(y)+" (Error "+w+")",null))
 case 445:case 5007:v=H.d(y)+" (Error "+w+")"
 return z.$1(new H.d8(v,null))}}if(a instanceof TypeError){u=$.$get$dt()
 t=$.$get$du()
@@ -3089,8 +3089,8 @@ y=H.B(z,this.$ti)
 z=this.a
 x=this.b
 w=z.length-x
-C.b.bR(y,0,w,z,x)
-C.b.bR(y,w,w+this.b,this.a,0)
+C.c.bR(y,0,w,z,x)
+C.c.bR(y,w,w+this.b,this.a,0)
 this.b=0
 this.c=this.a.length
 this.a=y},
@@ -3186,7 +3186,7 @@ z=P.h2(P.t,null)
 y=this.ae()
 for(x=0;w=y.length,x<w;++x){v=y[x]
 z.n(0,v,this.h(0,v))}if(w===0)y.push(null)
-else C.b.sj(y,0)
+else C.c.sj(y,0)
 this.b=null
 this.a=null
 this.c=z
@@ -3554,7 +3554,7 @@ if(!!this.$isbB)w=z.body
 else{y=a.tagName
 z.toString
 w=z.createElement(y)
-$.a_.body.appendChild(w)}if("createContextualFragment" in window.Range.prototype&&!C.b.u(C.R,a.tagName)){$.bF.selectNodeContents(w)
+$.a_.body.appendChild(w)}if("createContextualFragment" in window.Range.prototype&&!C.c.u(C.R,a.tagName)){$.bF.selectNodeContents(w)
 v=$.bF.createContextualFragment(b)}else{w.innerHTML=b
 v=$.a_.createDocumentFragment()
 for(;z=w.firstChild,z!=null;)v.appendChild(z)}z=$.a_.body
@@ -4007,8 +4007,8 @@ $ash:null,
 $ise:1,
 $ase:null},
 d7:{"^":"a;a",
-ai:function(a){return C.b.cr(this.a,new W.h9(a))},
-a2:function(a,b,c){return C.b.cr(this.a,new W.h8(a,b,c))}},
+ai:function(a){return C.c.cr(this.a,new W.h9(a))},
+a2:function(a,b,c){return C.c.cr(this.a,new W.h8(a,b,c))}},
 h9:{"^":"c:0;a",
 $1:function(a){return a.ai(this.a)}},
 h8:{"^":"c:0;a,b,c",
@@ -4034,9 +4034,9 @@ x=this.c
 x.Y(0,C.S)
 x.Y(0,y)}},
 iZ:{"^":"c:0;",
-$1:function(a){return!C.b.u(C.q,a)}},
+$1:function(a){return!C.c.u(C.q,a)}},
 j_:{"^":"c:0;",
-$1:function(a){return C.b.u(C.q,a)}},
+$1:function(a){return C.c.u(C.q,a)}},
 ja:{"^":"iY;e,a,b,c,d",
 a2:function(a,b,c){if(this.du(a,b,c))return!0
 if(b==="template"&&c==="")return!0
@@ -4216,7 +4216,7 @@ v=(w&4294967295)>>>0
 u=v+x+this.b
 z=(u&4294967295)>>>0
 this.a=z
-this.b=(C.c.H(w-v+(y-x)+(u-z),4294967296)&4294967295)>>>0},
+this.b=(C.b.H(w-v+(y-x)+(u-z),4294967296)&4294967295)>>>0},
 bB:function(a){var z,y,x
 if(a<=0||a>4294967296)throw H.b(P.de("max must be in range 0 < max \u2264 2^32, was "+a))
 z=a-1
@@ -4228,27 +4228,27 @@ return x},
 dH:function(a){var z,y,x,w,v,u,t,s
 z=a<0?-1:0
 do{y=(a&4294967295)>>>0
-a=C.c.H(a-y,4294967296)
+a=C.b.H(a-y,4294967296)
 x=(a&4294967295)>>>0
-a=C.c.H(a-x,4294967296)
+a=C.b.H(a-x,4294967296)
 w=((~y&4294967295)>>>0)+(y<<21>>>0)
 v=(w&4294967295)>>>0
-x=(~x>>>0)+((x<<21|y>>>11)>>>0)+C.c.H(w-v,4294967296)&4294967295
+x=(~x>>>0)+((x<<21|y>>>11)>>>0)+C.b.H(w-v,4294967296)&4294967295
 w=((v^(v>>>24|x<<8))>>>0)*265
 y=(w&4294967295)>>>0
-x=((x^x>>>24)>>>0)*265+C.c.H(w-y,4294967296)&4294967295
+x=((x^x>>>24)>>>0)*265+C.b.H(w-y,4294967296)&4294967295
 w=((y^(y>>>14|x<<18))>>>0)*21
 y=(w&4294967295)>>>0
-x=((x^x>>>14)>>>0)*21+C.c.H(w-y,4294967296)&4294967295
+x=((x^x>>>14)>>>0)*21+C.b.H(w-y,4294967296)&4294967295
 y=(y^(y>>>28|x<<4))>>>0
 x=(x^x>>>28)>>>0
 w=(y<<31>>>0)+y
 v=(w&4294967295)>>>0
-u=C.c.H(w-v,4294967296)
+u=C.b.H(w-v,4294967296)
 w=this.a*1037
 t=(w&4294967295)>>>0
 this.a=t
-s=(this.b*1037+C.c.H(w-t,4294967296)&4294967295)>>>0
+s=(this.b*1037+C.b.H(w-t,4294967296)&4294967295)>>>0
 this.b=s
 t=(t^v)>>>0
 this.a=t
@@ -4338,7 +4338,7 @@ C.a.F(z,(z&&C.a).E(z,"display"),"inline-block",null)
 this.dK()}else{z=document
 y=z.querySelector(".instructions .desktop").style
 C.a.F(y,(y&&C.a).E(y,"display"),"inline-block",null)
-z.querySelector(".qr").setAttribute("src",C.h.V("https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=",window.location.href))
+z.querySelector(".qr").setAttribute("src",C.h.V("https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=",window.location.href))
 z=z.querySelector(".playOnMobile").style
 C.a.F(z,(z&&C.a).E(z,"display"),"inline-block",null)}},
 dL:function(){var z,y
@@ -4371,14 +4371,14 @@ w.T(x.b)
 w=x.b.a.e
 J.ab(v.querySelector("#rowsToNextLevelDisplay"),J.z(w))
 w=x.b.a.a
-J.ab(v.querySelector("#levelDisplay"),C.c.i(w))
+J.ab(v.querySelector("#levelDisplay"),C.b.i(w))
 return P.a7(null,y)}})
 return P.a8($async$aF,y)},
 aA:function(){var z=0,y=P.Z(),x=this
 var $async$aA=P.a9(function(a,b){if(a===1)return P.a6(b,y)
 while(true)switch(z){case 0:x.ag()
 z=2
-return P.a5(x.a.ab("Game Over<hr>You reached level "+C.c.i(x.b.a.a)+"<hr>Better luck next time"),$async$aA)
+return P.a5(x.a.ab("Game Over<hr>You reached level "+C.b.i(x.b.a.a)+"<hr>Your score is "+C.b.i(x.b.b)+"<hr>Better luck next time"),$async$aA)
 case 2:window.location.assign(window.location.href)
 return P.a7(null,y)}})
 return P.a8($async$aA,y)},
@@ -4386,7 +4386,7 @@ az:function(){var z=0,y=P.Z(),x=this
 var $async$az=P.a9(function(a,b){if(a===1)return P.a6(b,y)
 while(true)switch(z){case 0:x.ag()
 z=2
-return P.a5(x.a.ab("Congratulations<hr>You finished the game<hr>&#x1f44f; &#x1f44f; &#x1f44f;"),$async$az)
+return P.a5(x.a.ab("Congratulations<hr>You finished the game<hr>Your score is "+C.b.i(x.b.b)+"<hr>&#x1f44f; &#x1f44f; &#x1f44f;"),$async$az)
 case 2:window.location.assign(window.location.href)
 return P.a7(null,y)}})
 return P.a8($async$az,y)},
@@ -4473,12 +4473,12 @@ J.ab(document.querySelector("#rowsToNextLevelDisplay"),J.z(x))
 z.d=z.b.a.e}x=z.e
 w=z.b
 v=w.b
-if(x!==v){J.ab(document.querySelector("#scoreDisplay"),C.c.i(v))
+if(x!==v){J.ab(document.querySelector("#scoreDisplay"),C.b.i(v))
 x=z.b
 z.e=x.b}else x=w
 w=z.f
 v=x.a.a
-if(w!==v){J.ab(document.querySelector("#levelDisplay"),C.c.i(v))
+if(w!==v){J.ab(document.querySelector("#levelDisplay"),C.b.i(v))
 x=z.b
 z.f=x.a.a}x=x.c.c
 if(x.b){y.fh(x)
@@ -4590,15 +4590,15 @@ fh:function(a,b){var z=new Y.fg(null,0,null,null,null,C.m)
 z.dv(a,b)
 return z}}},fY:{"^":"a;a,b,c,d,e,f,r,x",
 ga7:function(a){return this.a},
-bE:function(){C.b.sj(this.c,0)
+bE:function(){C.c.sj(this.c,0)
 J.eo(this.d,new Y.fZ(this))},
 dw:function(a,b){this.x=b
 this.a=a
-this.e=J.p(J.p(b.e.b,C.c.i(a)),"rowsToNextLevel")
-this.b=J.p(J.p(this.x.e.b,C.c.i(a)),"stoneSpeedInMilliseconds")
-this.d=J.p(J.p(this.x.e.b,C.c.i(a)),"possibleStones")
-this.f=J.p(J.p(this.x.e.b,C.c.i(a)),"shouldTetrisFieldRotate")
-this.r=J.z(J.p(J.p(this.x.e.b,C.c.i(a)),"messageAfterLevel"))},
+this.e=J.p(J.p(b.e.b,C.b.i(a)),"rowsToNextLevel")
+this.b=J.p(J.p(this.x.e.b,C.b.i(a)),"stoneSpeedInMilliseconds")
+this.d=J.p(J.p(this.x.e.b,C.b.i(a)),"possibleStones")
+this.f=J.p(J.p(this.x.e.b,C.b.i(a)),"shouldTetrisFieldRotate")
+this.r=J.z(J.p(J.p(this.x.e.b,C.b.i(a)),"messageAfterLevel"))},
 p:{
 cY:function(a,b){var z=new Y.fY(null,null,H.B([],[Y.di]),H.B([],[P.l]),null,null,"",null)
 z.dw(a,b)
@@ -4668,7 +4668,7 @@ if(q===(x?v.gl(v)-1:v.gl(v)+1)){q=r.gk(r)
 p=v.gk(v)
 q=(q==null?p==null:q===p)&&r.gak(r)}else q=!1
 if(q)return!1}}return!0},
-cE:function(){var z=this.a;(z&&C.b).w(z,new Y.hm())
+cE:function(){var z=this.a;(z&&C.c).w(z,new Y.hm())
 if(!this.bt())this.e9()},
 eN:function(){for(;this.bt();)this.cE()},
 bt:function(){var z,y,x,w
@@ -4678,7 +4678,7 @@ y=this.b.b
 if(typeof z!=="number")return z.aa()
 if(typeof y!=="number")return H.v(y)
 return z<y},
-e9:function(){var z=this.a;(z&&C.b).w(z,new Y.hl(this))
+e9:function(){var z=this.a;(z&&C.c).w(z,new Y.hl(this))
 this.b.ez()
 this.b.cL();++this.e.b},
 dY:function(){var z,y,x,w,v,u
@@ -4721,7 +4721,7 @@ x.sak(w,!0)
 x.sO(w,y.gO(a))
 return w}},hy:{"^":"a;a,b,c,d,e",
 cL:function(){var z,y
-C.b.dh(this.e.a.c)
+C.c.dh(this.e.a.c)
 z=this.e.a.c
 y=P.iS(Date.now())
 y=y.bB(this.e.a.c.length)
@@ -4734,7 +4734,7 @@ z=this.a
 z.toString
 y=H.w(z,0)
 x=P.aX(new H.bh(z,new Y.hD(a,b),[y]),!0,y)
-return x.length>0?C.b.gcF(x):null},
+return x.length>0?C.c.gcF(x):null},
 ez:function(){var z,y,x,w,v,u,t,s,r,q
 z=this.c
 y=z.a
@@ -4779,11 +4779,11 @@ z.b+=10*x*v},
 ek:function(a){var z,y,x
 z=this.a
 z.toString
-if(typeof z!=="object"||z===null||!!z.fixed$length)H.r(new P.u("removeWhere"));(z&&C.b).ej(z,new Y.hA(a),!0)
+if(typeof z!=="object"||z===null||!!z.fixed$length)H.r(new P.u("removeWhere"));(z&&C.c).ej(z,new Y.hA(a),!0)
 z=this.a
 z.toString
 y=H.w(z,0)
-C.b.w(P.aX(new H.bh(z,new Y.hB(a),[y]),!0,y),new Y.hC())
+C.c.w(P.aX(new H.bh(z,new Y.hB(a),[y]),!0,y),new Y.hC())
 x=0
 while(!0){z=this.b
 if(typeof z!=="number")return H.v(z)
@@ -4793,7 +4793,7 @@ dA:function(a){var z,y,x,w
 this.e=a
 z=a.e
 y=z.d
-y=J.p(J.p(z.c,C.c.i(y)),"tetrisFieldSize")
+y=J.p(J.p(z.c,C.b.i(y)),"tetrisFieldSize")
 this.b=y
 this.a=[]
 z=y
@@ -4840,12 +4840,12 @@ if(w==null)throw H.b(P.a0("Cannot read game JSON file"))
 v=C.o.bu(w)
 x.c=v
 z=3
-return P.a5(W.bK(J.z(J.p(J.p(v,C.c.i(b)),"stoneConfigurationLocation")),null,null),$async$al)
+return P.a5(W.bK(J.z(J.p(J.p(v,C.b.i(b)),"stoneConfigurationLocation")),null,null),$async$al)
 case 3:u=d
 if(u==null)throw H.b(P.a0("Cannot read stones JSON file"))
 x.a=C.o.bu(u)
 z=4
-return P.a5(W.bK(J.z(J.p(J.p(x.c,C.c.i(b)),"levelConfigurationLocation")),null,null),$async$al)
+return P.a5(W.bK(J.z(J.p(J.p(x.c,C.b.i(b)),"levelConfigurationLocation")),null,null),$async$al)
 case 4:t=d
 if(t==null)throw H.b(P.a0("Cannot read levels JSON file"))
 x.b=C.o.bu(t)
@@ -4952,7 +4952,7 @@ y.c.d.f2(x)
 z.T(y)}}},hO:{"^":"c:0;a",
 $1:function(a){this.a.a=!0}},hP:{"^":"c:0;a",
 $1:function(a){this.a.a=!1}},hQ:{"^":"c:0;a",
-$1:function(a){return C.b.u(["normal","bottom-left","bottom-right","over-head"],a)}}}],["","",,X,{"^":"",
+$1:function(a){return C.c.u(["normal","bottom-left","bottom-right","over-head"],a)}}}],["","",,X,{"^":"",
 ci:[function(){var z=0,y=P.Z(),x,w
 var $async$ci=P.a9(function(a,b){if(a===1)return P.a6(b,y)
 while(true)switch(z){case 0:x=new Y.fP(null,null,null,1)
@@ -5060,9 +5060,9 @@ C.a=W.f4.prototype
 C.F=W.fj.prototype
 C.G=W.aR.prototype
 C.H=J.f.prototype
-C.b=J.aT.prototype
+C.c=J.aT.prototype
 C.w=J.cT.prototype
-C.c=J.cU.prototype
+C.b=J.cU.prototype
 C.d=J.aU.prototype
 C.h=J.aV.prototype
 C.O=J.aW.prototype
