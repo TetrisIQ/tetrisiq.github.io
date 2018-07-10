@@ -1,0 +1,82 @@
+{
+   "1":
+   {
+      "stoneSpeedInMilliseconds":1000,
+      "rowsToNextLevel":4,
+      "possibleStones":[
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7
+      ],
+      "shouldTetrisFieldRotate":true,
+      "messageAfterLevel":"Level 2 reached<hr>"
+   },
+   "2":
+   {
+      "stoneSpeedInMilliseconds":800,
+      "rowsToNextLevel":8,
+      "possibleStones": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7
+      ],
+      "shouldTetrisFieldRotate":true,
+      "messageAfterLevel":"Level 3 reached<hr>"
+   },
+   "3":
+   {
+      "stoneSpeedInMilliseconds":700,
+      "rowsToNextLevel":16,
+      "possibleStones": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7
+      ],
+      "shouldTetrisFieldRotate":true,
+      "messageAfterLevel":"Level 4 reached<hr>You are good"
+   },
+   "4":
+   {
+      "stoneSpeedInMilliseconds":600,
+      "rowsToNextLevel":32,
+      "possibleStones": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7
+      ],
+      "shouldTetrisFieldRotate":true,
+      "messageAfterLevel":"Level 5 reached<hr> Did we find a new Tetris Master?"
+   },
+   "5":
+   {
+         "stoneSpeedInMilliseconds":500,
+         "rowsToNextLevel":64,
+         "possibleStones": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+         ],
+         "shouldTetrisFieldRotate":true,
+         "messageAfterLevel":"Level 6 reached<hr> You break 124 Rows."
+   }
+}

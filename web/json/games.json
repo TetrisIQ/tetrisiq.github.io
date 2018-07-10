@@ -3,6 +3,10 @@
     "tetrisFieldSize": 16,
     "levelConfigurationLocation" :"json/levels.json",
     "stoneConfigurationLocation" : "json/stones.json"
+  },
+  "2": {
+    "tetrisFieldSize": 16,
+    "levelConfigurationLocation" :"json/levels2.json",
+    "stoneConfigurationLocation" : "json/stones.json"
   }
 }
-
