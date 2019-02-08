@@ -7,7 +7,7 @@
 
 </head>
 
-<body bgcolor="#E6E6FA">
+<body bgcolor="#E6E6FA" onload="f()">
 <span>
 
             <h1>WELCOME TO</h1>
@@ -42,14 +42,18 @@
 
                     <h3>Projects</h3>
 
+                    <a href="https://tetrisiq.github.io/Tetris360/">Tetris360°</a>
                     <a href="https://github.com/TetrisIQ?tab=repositories">github</a>
-                    <a href="https://gitlab.com/TetrisIQ/ctf">ctf</a>
                     <a href="https://drive.google.com/">Google Drive</a>
 
                 </div>
 
                 <div class="category">
 
+                    <h3>CTF</h3>
+                    <a href="https://gitlab.com/TetrisIQ/ctf">ctf - Git</a>
+                    <a href="https://www.root-me.org/?lang=de">Rootme.org</a>
+                    <a href="https://backdoor.sdslabs.co/beginner">backdoor CTF</a>
 
 
                 </div>
@@ -73,38 +77,22 @@
 
                 <div class="category">
 
-                    <h3>Playlists</h3>
+                    <h3></h3>
 
-                    <a href="https://www.youtube.com/watch?v=0HMiVtCoCNY&amp;list=LLO7M-4M_vt38hSoc6zJGAsg">liked videos</a>
-                    <a href="https://www.youtube.com/watch?v=rFywcnKDVUk&amp;list=PLzZ0CQPruwO9uJnybQH6KbHxXKWERLOUy">chill rap</a>
-                    <a href="https://www.youtube.com/watch?v=JyBV4yinJ38&amp;list=RDJyBV4yinJ38">vaporwave</a>
-                    <a href="https://www.youtube.com/watch?v=-oVW8gcse4g&amp;list=PLzZ0CQPruwO9IjczPndw9bqiHXORwtjED">metal</a>
-                    <a href="https://www.youtube.com/watch?v=yyDUC1LUXSU&amp;list=PLzZ0CQPruwO8SEXjTW0guQ-MvLMRJegI8">pop</a>
-                    <a href="https://www.youtube.com/watch?v=D0f8NfwRtpc&amp;list=PLzZ0CQPruwO_z20uySHSCVCw801p7WOmz">festival trap</a>
-                    <a href="https://www.youtube.com/watch?v=B0IwsK5MDsM&amp;list=PLzZ0CQPruwO_IK3QBrIhVlHF2QJtL9chg">dubstep</a>
 
                 </div>
 
                 <div class="category">
 
-                    <h3>Streams</h3>
+                    <h3></h3>
 
-                    <a href="https://twitch.tv/riotgames/">riot games</a>
-                    <a href="https://twitch.tv/esl_csgo/">esl csgo</a>
-                    <a href="https://twitch.tv/cohhcarnage/">cohh carnage</a>
-                    <a href="https://twitch.tv/imaqtpie/">imaqtpie</a>
-                    <a href="https://twitch.tv/mushisgosu/">gosu</a>
 
                 </div>
 
                 <div class="category">
 
-                    <h3>Projects</h3>
+                    <h3></h3>
 
-                    <a href="https://console.cloud.google.com/getting-started?authuser=1">cloud console</a>
-                    <a href="https://paper.dropbox.com/doc/KK-PROJECT--AWrYzTrw35s3ZKtOmFgX5tg_Ag-UO32koWTXwU2sEjhhWqs2">knk project</a>
-                    <a href="https://docs.google.com/spreadsheets/d/1SONZcNhkS0yz3aujsJ_dM2N9iTdY5-wOLvHmQJBVb_Q/edit#gid=2083540063">knk venturi</a>
-                    <a href="http://drive.google.com/">google drive</a>
 
 
                 </div>
@@ -112,7 +100,7 @@
             </div>
 
             <label id="one" onclick="showMain();" style="border: 3px solid rgb(28, 148, 211);"></label>
-            <label id="two" onclick="showSecond();" style="border: 3px solid rgb(239, 203, 167);"></label>
+           <label id="two" onclick="showSecond();" style="border: 3px solid rgb(239, 203, 167);"></label>
         </span>
 <script>
     function showMain() {
@@ -127,6 +115,26 @@
         document.getElementById("two").style.border = "3px solid #1c94d3";
         document.getElementById("main").style.display = "none";
         document.getElementById("second").style.display = "inline";
+    }
+    function f() {
+        var keyboardEvent = document.createEvent("KeyboardEvent");
+        var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? "initKeyboardEvent" : "initKeyEvent";
+
+
+        keyboardEvent[initMethod](
+            "keydown", // event type : keydown, keyup, keypress
+            true, // bubbles
+            true, // cancelable
+            window, // viewArg: should be window
+            false, // ctrlKeyArg
+            false, // altKeyArg
+            false, // shiftKeyArg
+            false, // metaKeyArg
+            0, // keyCodeArg : unsigned long the virtual key code, else 0
+            117 // charCodeArgs : unsigned long the Unicode character associated with the depressed key, else 0
+        );
+        document.dispatchEvent(keyboardEvent);
+
     }
 
 </script>
