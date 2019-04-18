@@ -6,7 +6,7 @@
 
 </head>
 
-<body bgcolor="#E6E6FA" onload="f()">
+<body bgcolor="#E6E6FA">
 <span>
 
             <h1>WELCOME TO</h1>
@@ -110,26 +110,6 @@
         document.getElementById("two").style.border = "3px solid #1c94d3";
         document.getElementById("main").style.display = "none";
         document.getElementById("second").style.display = "inline";
-    }
-    function f() {
-        var keyboardEvent = document.createEvent("KeyboardEvent");
-        var initMethod = typeof keyboardEvent.initKeyboardEvent !== 'undefined' ? "initKeyboardEvent" : "initKeyEvent";
-
-
-        keyboardEvent[initMethod](
-            "keydown", // event type : keydown, keyup, keypress
-            true, // bubbles
-            true, // cancelable
-            window, // viewArg: should be window
-            false, // ctrlKeyArg
-            false, // altKeyArg
-            false, // shiftKeyArg
-            false, // metaKeyArg
-            0, // keyCodeArg : unsigned long the virtual key code, else 0
-            117 // charCodeArgs : unsigned long the Unicode character associated with the depressed key, else 0
-        );
-        document.dispatchEvent(keyboardEvent);
-
     }
 
 </script>

@@ -1,0 +1,24 @@
+<p id=id name=id class=id> </p>
+
+<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+<input type="button" value="getIDs" onClick="getAndroidBeaconIDs()" />
+<input type="button" value="sendNotify" onClick="sendAndroidNotification()" />
+
+
+<script type="text/javascript">
+
+
+	function getAndroidBeaconIDs() {
+    	var a = Android.getIDs()
+	    document.getElementById("id").innerHTML = a + ""
+	}
+
+
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
+    }
+
+    function sendAndroidNotification() {
+      Android.sendNotification("text", "content");
+    }
+</script>
