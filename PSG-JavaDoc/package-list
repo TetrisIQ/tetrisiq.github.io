@@ -1,0 +1,8 @@
+de.edu.game
+de.edu.game.config
+de.edu.game.config.loader
+de.edu.game.controller
+de.edu.game.controller.responses
+de.edu.game.exceptions
+de.edu.game.model
+de.edu.game.repositorys
