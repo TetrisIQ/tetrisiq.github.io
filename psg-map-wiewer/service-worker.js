@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.78a1cea83f518c6f12f53caba4582e68.js"
+  "/PSG-psg-map-wiewer/precache-manifest.912e8ff0a097706ddddfad3ceaa4fedd.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "map-viewer"});
